@@ -1,0 +1,30 @@
+{
+  "name": "selfbot",
+  "version": "0.0.1",
+  "description": "Discord selfbot",
+  "main": "index.js",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "discordie": "^0.7.4",
+    "request": "^2.73.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hedgehog1029/selfbot.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "selfbot"
+  ],
+  "author": "offbeatwitch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hedgehog1029/selfbot/issues"
+  },
+  "homepage": "https://github.com/hedgehog1029/selfbot#readme"
+}
