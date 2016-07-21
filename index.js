@@ -63,8 +63,6 @@ var commands = {
     run: function(e, a) {
       var input = a.join(" ");
 
-      console.log(input);
-
       e.edit(`Input: \`${input}\`\nResult: \`${punycode.toASCII(input)}\``);
     }
   }
