@@ -96,7 +96,8 @@ var commands = {
 }
 
 var replaces = {
-  "/shrug": "¯\\_(ツ)_/¯"
+  "/shrug": "¯\\_(ツ)_/¯",
+  "(tm)": "™"
 }
 
 client.Dispatcher.on("GATEWAY_READY", e => {
