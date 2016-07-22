@@ -65,6 +65,33 @@ var commands = {
 
       e.edit(`Input: \`${input}\`\nResult: \`${punycode.toASCII(input)}\``);
     }
+  },
+  "selfdestruct": {
+    run: function(e, a) {
+      var duration = Math.floor(parseInt(a[0])),
+          msg = a.slice(1).join(" ");
+
+      var ticker;
+
+      var tick = () => {
+        var secsRemaining = duration;
+
+        return () => {
+          secsRemaining--;
+
+          if (secsRemaining < 1) {
+            e.delete();
+
+            clearInterval(ticker);
+          }
+
+          e.edit(`**[:clock: ${secsRemaining}s]** ${msg}`);
+        }
+      }
+
+      e.edit(`**[:clock: ${duration}s]** ${msg}`);
+      ticker = setInterval(tick(), 1000);
+    }
   }
 }
 
